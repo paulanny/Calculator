@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body        {
+
+    background: linear-gradient( hsl(276, 66%, 86%) 
+    , hsl(276, 29%, 42%) );
+    background-repeat: no-repeat;
+}
+
+
+.calculatorbody {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 50px);
+    margin: auto;
+    }
+
+
+    .allbuttons > button {
+        cursor: pointer;
+        font-size: 1.3rem;
+        background-color: white;
+        border-radius: 6px;
+        margin: 5px;
+        color: rgb(57, 41, 70);
+        border-bottom-left-radius: 11px;
+        border-top-right-radius: 11px;
+        /* overflow: auto; */
+        border: 1px solid rgb(57, 41, 70);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        text-align: center;
+    }
+
+        .allbuttons   {
+          display: grid;
+         justify-content: center;
+         align-content: center;
+         /* min-height: 100vh; */
+         grid-template-columns: repeat(4, 50px);
+         grid-template-rows: repeat(5, 50px);
+         background-color: rgb(57, 41, 70);
+         width: 250px;
+         padding: 15px;
+         border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        
+}
+
+h4  {
+  text-align: center;
+  background-color: rgb(57, 41, 70);
+  width: 250px;
+  color: white;
+  padding: 10px;
+  margin-bottom: -25px;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  
+}
+
+.name   {
+      color: #d48cfb;
+}
+
+    
+      .output{
+        grid-column: 1 / -1;
+        grid-template-rows:  minmax(120px, auto);
+        background-color: rgb(57, 48, 64);
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        word-wrap: break-word;
+        word-break: break-all;
+        width: 250px;
+        height: 150px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 100;
+      }
+
+.calculatorbody .twocols  {
+        grid-column: span 2;
+        background-color: rgb(225, 189, 249);
+        color: rgb(57, 48, 64);
+      }
+  
+        .allbuttons > button:hover {
+          background-color: #d48cfb;
+          color: black;
+        }
+
+
+        .output .firstNum{
+            color: rgba(255,255, 255, 0.75);
+            font-size: 1.5rem;
+          }
+    
+          .output .secondNum{
+            color: white;
+            font-size: 2.5rem;
+          }
+
+          
